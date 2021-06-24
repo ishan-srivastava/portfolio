@@ -9,7 +9,7 @@
   export let project: Project;
 </script>
 
-<div class="project" style="background-color: #a8a7e0;color:black">
+<div class="project">
   <img
     src={project.banner ||
       "https://cdnv.vipestudio.com/uploads/2020/06/unnamed-file.wp.gif"}
@@ -33,7 +33,10 @@
     align-items: flex-start;
     width: 100%;
     height: 100%;
-    border-radius: 3px;
+    border-radius: 6px;
+    background-color: #e4efe7;
+    color: black;
+    border: 2px solid #06442077;
     overflow: hidden;
   }
   .banner {
@@ -46,10 +49,7 @@
   .project-details {
     padding: 0 10px;
   }
-  .link-icon {
-    margin-top: 20px;
-  }
-  .project-desc {
+    .project-desc {
     font-family: "Open Sans", sans-serif;
     transform: translateY(-10px);
   }
@@ -58,16 +58,16 @@
   }
   @keyframes anim {
     25% {
-      box-shadow: 15px 0px #a4c2f5, -15px 0px 0px #95deb1;
+      box-shadow: 15px 0px #F7DAD9, -15px 0px 0px #FFF5DA;
     }
     50% {
-      box-shadow: 15px 15px #a4c2f5, -15px -15px 0px #95deb1;
+      box-shadow: 15px 15px #F7DAD9, -15px -15px 0px #FFF5DA;
     }
     75% {
-      box-shadow: 0px 15px #a4c2f5, 0px -15px 0px #95deb1;
+      box-shadow: 0px 15px #F7DAD9, 0px -15px 0px #FFF5DA;
     }
     99% {
-      box-shadow: 0px 0px #a4c2f5, 0px -0px 0px #95deb1;
+      box-shadow: 0px 0px #F7DAD9, 0px -0px 0px #FFF5DA;
     }
   }
   .link-icons {

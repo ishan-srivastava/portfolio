@@ -1,6 +1,18 @@
+<script lang="ts">
+  import { getRandomColor } from "../helpers";
+
+  let hiColor = getRandomColor().bg;
+  function changeHiColor() {
+    hiColor = getRandomColor().bg;
+  }
+</script>
+
 <div class="intro">
   <div class="text-intro">
-    <h1 class="hi-line">HI, I'M ISHAN</h1>
+    <h1 class="hi-line">
+      <span on:mouseleave={changeHiColor} style={"color:" + hiColor}>HI,</span>
+      I'M ISHAN
+    </h1>
     <p class="intro-desc">
       Fullstack developer based out of Delhi, India. <br />Lover of all things
       JavaScript - but I am always learning new stuff.

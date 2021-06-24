@@ -1,5 +1,5 @@
 export const colors: PastelColor[] = [
-  { bg: "#CAF7E3", fg: "black" },
+  { bg: "#a8a7e0", fg: "black" },
   { bg: "#F8EDED", fg: "black" },
   { bg: "#F6DFEB", fg: "black" },
   { bg: "#E4BAD4", fg: "white" },

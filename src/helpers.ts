@@ -34,7 +34,7 @@ export const getTechInfo = (techName: TechName): Tech => {
   return null;
 };
 
+let colorIndex = 0;
 export function getRandomColor(): PastelColor {
-  const items = colors;
-  return items[Math.floor(Math.random() * items.length)];
+  return colors[colorIndex++ % colors.length];
 }
